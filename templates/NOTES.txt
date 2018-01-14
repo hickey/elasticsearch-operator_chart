@@ -1,0 +1,9 @@
+The elasticsearch-operator has been installed into the cluster.
+
+All nodes that have the potential to run the elasticsearch container
+should have the following added to its sysctl settings:
+
+    vm.max_map_count = 262144
+
+Failure to set vm.max_map_count to at least the value above will
+cause the elasticsearch containers to constantly exit.
