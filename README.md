@@ -1,0 +1,1 @@
+# elasticsearch-operator_chart
